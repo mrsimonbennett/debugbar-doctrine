@@ -1,7 +1,7 @@
 {
     "name": "vittee/debugbar-doctrine",
     "description": "Doctrine Collector for Debugbar",
-    "homepage": "https://github.com/vittee/debugbar-doctrine"
+    "homepage": "https://github.com/vittee/debugbar-doctrine",
     "authors": [
         {
             "name": "Wittawas Nakkasem",
