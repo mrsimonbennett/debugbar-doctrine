@@ -2,6 +2,7 @@
 
 use Illuminate\Support\ServiceProvider;
 use DebugBar\DataCollector\PDO\TraceablePDO;
+use DebugBar\DataCollector\PDO\PDOCollector;
 use Vittee\DebugbarDoctrine\DataCollector\Doctrine\PDODoctrineCollector;
 
 class DebugbarDoctrineServiceProvider extends ServiceProvider {
@@ -31,8 +32,13 @@ class DebugbarDoctrineServiceProvider extends ServiceProvider {
 
 						if ($doctrine) {
 							$pdo = $doctrine->getConnection()->getWrappedConnection();
-							$collector = new PDODoctrineCollector(new TraceablePDO($pdo));
-							$debugbar->addCollector($collector);
+							
+							foreach ($debugbar->getCollectors() as $collector) {
+								if ($collector instanceof PDOCollector) {
+									$collector->addConnection(new TraceablePDO($pdo));
+									break;
+								}
+							}
 						}
 
 					} catch (\PDOException $e) {
