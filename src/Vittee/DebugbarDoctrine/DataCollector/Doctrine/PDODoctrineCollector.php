@@ -1,4 +1,4 @@
-<?php namespace Vittee\DebugbarDoctrine\DataCollector\Doctrine;
+<?php namespace Smallaxe\DebugbarDoctrine\DataCollector\Doctrine;
 
 use DebugBar\DataCollector\PDO\PDOCollector;
 

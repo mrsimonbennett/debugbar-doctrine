@@ -1,12 +1,12 @@
 {
-    "name": "vittee/debugbar-doctrine",
+    "name": "smallaxe/debugbar-doctrine",
     "description": "Doctrine Collector for Debugbar",
     "homepage": "https://github.com/vittee/debugbar-doctrine",
     "authors": [
         {
             "name": "Wittawas Nakkasem",
             "email": "vittee.n@gmail.com"
-        }
+        }w
     ],
     "require": {
         "php": ">=5.3.0",
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Vittee\\DebugbarDoctrine": "src/"
+            "Smallaxe\\DebugbarDoctrine": "src/"
         }
     },
     "minimum-stability": "dev"

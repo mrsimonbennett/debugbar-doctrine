@@ -1,9 +1,9 @@
-<?php namespace Vittee\DebugbarDoctrine;
+<?php namespace Smallaxe\DebugbarDoctrine;
 
 use Illuminate\Support\ServiceProvider;
 use DebugBar\DataCollector\PDO\TraceablePDO;
 use DebugBar\DataCollector\PDO\PDOCollector;
-use Vittee\DebugbarDoctrine\DataCollector\Doctrine\PDODoctrineCollector;
+use Smallaxe\DebugbarDoctrine\DataCollector\Doctrine\PDODoctrineCollector;
 
 class DebugbarDoctrineServiceProvider extends ServiceProvider {
 
@@ -59,7 +59,7 @@ class DebugbarDoctrineServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function register() {
-		$this->package('vittee/debugbar-doctrine');		
+		$this->package('smallaxe/debugbar-doctrine');		
 	}
 
 	/**
